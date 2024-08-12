@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Builders</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="spinner show">
+        <div class="spinner-grow">
+            WELCOME TO AZ BUILDERS
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <div class="container">
+            <nav class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="open"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </label>
+                <a class="logo" href="index.html">
+                    <span>AZ</span>
+                    <span>Builders</span>
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero__text-box">
+                <h1 class="hero__text">
+                    <span class="hero__text-top">Build Your Dreams with Quality Materials</span>
+                    <span class="hero__text-bottom">Your trusted source for premium construction supplies</span>
+                </h1>
+                <button class="btn btn-green">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+
+    <section class="featured">
+        <h2 class="title">Product Highlights</h2>
+        <div class="medium-container">
+            <div class="row">
+                <div class="col-4 slide animate-left">
+                    <img src="images/featured-1.jpg">
+                    <h4>High-Strength Cement</h4>
+                    <p>Engineered for maximum durability and strength, our high-strength cement is ideal for all construction needs. Whether you’re building foundations, structures, or paving, our cement ensures longevity and reliability. Available in various
+                        grades to suit your project specifications.</p>
+                </div>
+                <div class="col-4 slide animate-left">
+                    <img src="images/featured-2.jpg">
+                    <h4>Weather-Resistant Bricks</h4>
+                    <p>Designed to withstand the harshest weather conditions, our weather-resistant bricks offer superior performance and aesthetic appeal. Perfect for exterior walls and structures, these bricks provide excellent thermal insulation and moisture
+                        resistance.
+                    </p>
+                </div>
+                <div class="col-4 slide animate-right">
+                    <img src="images/featured-3.jpg">
+                    <h4>Steel Rebars</h4>
+                    <p>Reinforce your concrete structures with our high-grade steel rebars. Manufactured to industry standards, these rebars provide the necessary tensile strength to support heavy loads and enhance the structural integrity of your projects.</p>
+                </div>
+                <div class="col-4 slide animate-right">
+                    <img src="images/featured-4.jpg">
+                    <h4>Premium Wood Panels</h4>
+                    <p>Our premium wood panels are sourced from sustainable forests and processed to ensure high quality. These panels are perfect for interior and exterior applications, offering a natural look and exceptional durability. Available in various
+                        finishes to match your design needs.</p>
+                </div>
+                <!-- Next and previous buttons -->
+                <a id="prevBtn1" class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a id="nextBtn1" class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT PRODUCTS -->
+
+    <section class="featured featured2">
+        <h2 class="title">Project Highlights</h2>
+        <div class="medium-container">
+            <div class="row">
+                <div class="col-4 slide2 animate-bottom">
+                    <img src="images/featured-1.jpg">
+                    <h4>Custom Building Solutions</h4>
+                    <p>Tailored to meet your specific project requirements, our custom building solutions offer flexibility and innovation. From concept to completion, we provide expert guidance and high-quality materials to bring your vision to life. Whether
+                        it’s a residential development or a commercial complex, we’ve got you covered.</p>
+                </div>
+                <div class="col-4 slide2 animate-bottom">
+                    <img src="images/featured-2.jpg">
+                    <h4>Expert Consultation</h4>
+                    <p>Our team of experienced professionals is here to provide you with expert consultation on your construction projects. We offer advice on material selection, project planning, and cost estimation to ensure your projects are successful
+                        and within budget. Schedule a consultation today and benefit from our industry expertise.</p>
+                </div>
+                <div class="col-4 slide2 animate-bottom">
+                    <img src="images/featured-3.jpg">
+                    <h4>Delivery and Logistics</h4>
+                    <p>With our efficient delivery and logistics services, you can be assured that your materials will arrive on time and in perfect condition. We offer flexible delivery options to suit your schedule and project timelines, ensuring that
+                        you have what you need when you need it.</p>
+                </div>
+                <div class="col-4 slide2 animate-bottom">
+                    <img src="images/featured-4.jpg">
+                    <h4>Quality Assurance</h4>
+                    <p>Quality is our top priority. We have stringent quality control processes in place to ensure that all our products meet the highest standards. Our quality assurance team conducts regular inspections and tests to guarantee the reliability
+                        and performance of our materials.</p>
+                </div>
+                <!-- Next and previous buttons -->
+                <a id="prevBtn2" class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a id="nextBtn2" class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES PRODUCTS -->
+
+    <section class="featured">
+        <h2 class="title">CATEGORIES</h2>
+        <div class="medium-container">
+            <div class="row">
+                <div class="col-4 animate-top">
+                    <img src="images/featured-1.jpg">
+                    <h4>Cement<span>(2)</span></h4>
+                </div>
+                <div class="col-4 animate-top">
+                    <img src="images/featured-2.jpg">
+                    <h4>Paint<span>(6)</span></h4>
+                </div>
+                <div class="col-4 animate-bottom">
+                    <img src="images/featured-3.jpg">
+                    <h4>Construction Materials<span>(20)</span></h4>
+                </div>
+                <div class="col-4 animate-bottom">
+                    <img src="images/featured-4.jpg">
+                    <h4>Plumbering Materials<span>(13)</span></h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about">
+        <div class="about-container animate-bottom">
+            <div class="sec-1">
+                <h2>Welcome to AZ BUILDERS</h2>
+                <p>At AZ Builders, we are committed to providing high-quality construction materials that meet the demands of modern building projects. With over 20 years of experience in the industry, we have established ourselves as a trusted supplier
+                    for both professional builders and DIY enthusiasts.</p>
+            </div>
+            <div class="sec-1 right">
+                <h2>Why Choose Us?</h2>
+                <p class="accordion">Extensive Product Range</p>
+                <div class="panel">
+                    <p>We offer a wide variety of construction materials, including cement, bricks, wood panels, insulation, and more. Whatever your project requirements, we have the materials you need.</p>
+                </div>
+
+                <p class="accordion">Competitive Pricing</p>
+                <div class="panel">
+                    <p>We understand the importance of cost-efficiency in construction projects. Our competitive pricing ensures you get the best value without compromising on quality.</p>
+                </div>
+
+                <p class="accordion">Reliable Delivery</p>
+                <div class="panel">
+                    <p>Timely delivery is crucial in construction. Our efficient logistics network ensures that your materials arrive on schedule, so your projects can proceed smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="sectionLike">
+        <div class="likeContainer">
+            <div class="likeBox animate-bottom">
+                <div class="likeBoxContent">
+                    <p>We look forward to working with you and helping you achieve your construction goals. For more information about our products and services, please get in touch with us.</p>
+                </div>
+            </div>
+            <div class="likeBox animate-bottom">
+                <div class="likeBoxContent">
+                    <h6>Follow Us</h6>
+                    <div class="socialBox">
+                        <span class="fab fa-facebook-f link"></span>
+                        <span class="fab fa-twitter link"></span>
+                        <span class="fab fa-instagram link"></span>
+                        <span class="fab fa-linkedin link"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="likeBox animate-bottom">
+                <div class="likeBoxContent">
+                    <h6>Contact Us</h6>
+                    <p><span>Phone:</span> (123) 456-7890</p>
+                    <p><span>Email:</span> info@companyname.com</p>
+                    <p><span>Address:</span> 123 Main Street, Anytown, USA</p>
+                    <p>Copyright <span id="year"></span>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
