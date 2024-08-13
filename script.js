@@ -300,13 +300,76 @@ const products = [
     image: "images/image10.jpeg"
   },
   {
-    name: "16mm Steel Rod",
+    name: "16mm Steel Bars",
     category: "Steel Rod",
     price: 30,
     discount: "15%",
     tag: "Plumbering",
     stock: "Out of Stock",
     image: "images/image11.jpg"
+  },
+  {
+    name: "Single Tap",
+    category: "Plumbering",
+    price: 30,
+    discount: "15%",
+    tag: "Plumbering",
+    stock: "Avaliable",
+    image: "images/tap.jpg"
+  },
+  {
+    name: "Nero Brick",
+    category: "Brick",
+    price: 30,
+    discount: "15%",
+    tag: "Brick",
+    stock: "Avaliable",
+    image: "images/nerobricks.jpg"
+  },
+  {
+    name: "Quality Woods",
+    category: "Wood",
+    price: 30,
+    discount: "15%",
+    tag: "Wood",
+    stock: "Avaliable",
+    image: "images/building_5.jpg"
+  },
+  {
+    name: "Quality Cement Colored Bricks",
+    category: "Brick",
+    price: 30,
+    discount: "15%",
+    tag: "Brick",
+    stock: "Out of Stock",
+    image: "images/building_8.jpg"
+  },
+  {
+    name: "2X4 Quality Wood",
+    category: "Wood",
+    price: 30,
+    discount: "15%",
+    tag: "Wood",
+    stock: "Avaliable",
+    image: "images/building_9.jpg"
+  },
+  {
+    name: "Multi-Color Bricks",
+    category: "Brick",
+    price: 30,
+    discount: "15%",
+    tag: "Brick",
+    stock: "Out of Stock",
+    image: "images/building_12.jpg"
+  },
+  {
+    name: "16mm Plated Rod",
+    category: "Steel Rod",
+    price: 30,
+    discount: "15%",
+    tag: "Steel Rod",
+    stock: "Avaliable",
+    image: "images/building_10.jpg"
   }
 ];
 
