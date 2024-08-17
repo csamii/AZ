@@ -273,7 +273,7 @@ const products = [
     category: "Steel Rod",
     price: 30,
     discount: "15%",
-    tag: "Rod",
+    tag: "Steel Rod",
     stock: "Out of Stock",
     image: "images/image11.jpg"
   },
@@ -336,7 +336,7 @@ const products = [
     category: "Rod",
     price: 30,
     discount: "15%",
-    tag: "Rod",
+    tag: "Steel Rod",
     stock: "Avaliable",
     image: "images/building_10.jpg"
   }
@@ -426,7 +426,7 @@ productsDropdownList.addEventListener("change", (e) => {
       setProductCards(products.filter((product) => product.tag === "Brick"));
       break;
     case "steel_rod":
-      setProductCards(products.filter((product) => product.tag === "Rod"));
+      setProductCards(products.filter((product) => product.tag === "Steel Rod"));
       break;
     case "wood":
       setProductCards(products.filter((product) => product.tag === "Wood"));
