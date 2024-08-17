@@ -273,7 +273,7 @@ const products = [
     category: "Steel Rod",
     price: 30,
     discount: "15%",
-    tag: "Plumbering",
+    tag: "Rod",
     stock: "Out of Stock",
     image: "images/image11.jpg"
   },
@@ -333,10 +333,10 @@ const products = [
   },
   {
     name: "16mm Plated Rod",
-    category: "Steel Rod",
+    category: "Rod",
     price: 30,
     discount: "15%",
-    tag: "Steel Rod",
+    tag: "Rod",
     stock: "Avaliable",
     image: "images/building_10.jpg"
   }
@@ -371,6 +371,77 @@ products.forEach(product => {
   </div>
   `;
 });
+
+const productsDropdownList = document.getElementById("products");
+
+const setProductCards = (arr = products) => {
+
+  productsContainer.innerHTML += arr
+    .map(
+      ({ image, stock, name, tag, discount, price }) => {
+      const stockClass = stock === "Avaliable" ? "avaliable" : "out-of-stock";
+      return `
+      <div class="card animate-bottom">
+        <div class="card_section_a">
+            <img src="${image}" alt="${name}" class="img" />
+            <div class="sale ${stockClass}">${stock}</div>
+        </div>
+        <div class="card_section_b">
+            <div class="card_b_head">
+                <h3>${name}</h3>
+            </div>
+            <div class="card_b_head_b">
+                <p>${tag}</p>
+            </div>
+            <div class="card_b_span">
+                <h3 class="span_a">Price: $${price}</h3>
+                <p>Discount: <span class="span_b">$${discount}</span></p>
+            </div>
+            <div>
+                <a class="read-btn">Get Quote</a>
+            </div>
+        </div>
+      </div>
+          `
+        ;
+      }
+    )
+    .join("");
+};
+
+productsDropdownList.addEventListener("change", (e) => {
+  productsContainer.innerHTML = "";
+
+  switch (e.target.value) {
+    case "door":
+      setProductCards(products.filter((product) => product.tag === "Door"));
+      break;
+    case "cement":
+      setProductCards(products.filter((product) => product.tag === "Cement"));
+      break;
+    case "plumbering":
+      setProductCards(products.filter((product) => product.tag === "Plumbering"));
+      break;
+    case "brick":
+      setProductCards(products.filter((product) => product.tag === "Brick"));
+      break;
+    case "steel_rod":
+      setProductCards(products.filter((product) => product.tag === "Rod"));
+      break;
+    case "wood":
+      setProductCards(products.filter((product) => product.tag === "Wood"));
+      break;
+    case "tile":
+      setProductCards(products.filter((product) => product.tag === "Tile"));
+      break;
+    case "security":
+      setProductCards(products.filter((product) => product.tag === "Security"));
+      break;
+    default:
+        setProductCards()
+    }
+  });
+  
 
 // SCROLL REVEAL
 
